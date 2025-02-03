@@ -4,8 +4,14 @@
 *.deb
 
 {{- if (ne .chezmoi.os "darwin") }}
-.hammerspoon/**
-.config/kitty/**
+.hammerspoon/**/*
+.config/dbt/**/*
+.config/ghostty/**/*
+.config/helix/**/*
+.config/kanata/**/*
+.config/kanata-tray/**/*
+.config/kitty/**/*
+.config/unison/**/*
 {{ end -}}
 
 {{- if ne .chezmoi.os "linux" }}
